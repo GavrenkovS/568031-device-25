@@ -1,12 +1,87 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
-  </head>
-  <body>
+    <head>
+        <meta charset="utf-8">
+        <title>Девайс</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header class="main-header">
+            <nav class="main-navigation">
+                <a class="main-header-logo">
+                <img src="img/header-logo.svg" width="200" height="100" alt="logo DEVICE header">
+                </a>
+                <!--Здесь будет форма поиска по сайту-->
+                <ul class="header-user-navigation">
+                    <li class="login-link">Войти</li>
+                    <li class="compare-link">Сравнить</li>
+                    <li class="cart-link">Корзина</li>
+                </ul>
+                <ul class="header-site-navigation">
+                    <li><a class="header-catalog-link" href="catalog.html">Каталог товаров</a></li>
+                    <li><a href="delivery.html">Доставка</a></li>
+                    <li><a href="guaranty.html">Гарантия</a></li>
+                    <li><a class="header-contacts-link" href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+    	<!--Здесь будут блоки, выделенные красным-->
+    
+        <main class="container">
+            <h1 class="visually-hidden">Интернет-магазин «DEVICE»</h1>
+            <section class="about-us">
+                <h2>О нас</h2>
+                <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+                <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+                <ul class="transport-companies-list">
+                    <li>Деловые Линии</li>
+                    <li>Автотрейдинг</li>
+                    <li>ЖелДорЭкспедиция</li>
+                </ul>
+                <a class="button" href="#">Подробнее о нас</a>
+            </section>
+            <section class="contacts">
+                <h2>Контакты</h2>
+                <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+                <!--Карта-->
+                <a class="button" href="write-to-us.html">Напишите нам</a>
+                <!-- Здесь будет всплывающее окно с формой-->
+            </section>
+        </main>
 
-  </body>
+
+        <footer class="main-footer">
+            <nav>
+                <a class="main-footer-logo" href="#">
+                <img src="img/footer-logo.svg" width="200" height="100" alt="logo DEVICE footer">
+                </a>
+                <ul class="footer-user-navigation">
+                    <li class="login-link">Войти</li>
+                    <li class="compare-link">Сравнить</li>
+                    <li class="cart-link">Корзина</li>
+                </ul>
+                <ul class="footer-site-navigation">
+                    <li><a href="delivery.html">Доставка</a></li>
+                    <li><a href="guaranty.html">Гарантия</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="footer-contacts">
+                <p class="footer-address">г. Москва, ул. Строителей, 15</p>
+                <p class="footer-phone-number">Тел.:+7(495)495-95-95</p>
+            </div>
+            <div class="footer-social">
+                <ul>
+                    <li><a class="social-button" href="#">Facebook</a></li>
+                    <li><a class="social-button" href="#">Instagram</a></li>
+                    <li><a class="social-button" href="#">Twitter</a></li>
+                </ul>
+            </div>
+            <a class="footer-copyright-button" href="https://htmlacademy.ru/intensive/htmlcss">
+            <img src="img/htmlacademy.svg" width="50" height="50" alt="htmlacademy.ru">
+            </a>        
+        </footer>  
+    </body>
 </html>
+ 
