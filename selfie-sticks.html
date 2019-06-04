@@ -9,9 +9,15 @@
         <header class="main-header">
             <nav class="main-navigation">
                 <a class="main-header-logo" href="index.html">
-                <img src="img/logo-device.svg" width="163" height="35" alt="logo DEVICE header">
+                <img src="img/logo-device.svg" width="163" height="35" alt="Логотип интернет-магазина DEVICE">
                 </a>
-                <!--Здесь будет форма поиска по сайту-->
+                <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+                    <label class="visually-hidden">
+                        Поиск по сайту
+                        <input class="search" type="text" name="query" placeholder="Поиск по сайту">
+                    </label>
+                    <button class="search-button" type="submit">Найти</button>
+                </form>
                 <ul class="header-user-navigation">
                     <li><a class="profile" href="profile.html">Валентин Петухов</a></li>
                     <li><a class="log-out-link" href="log-out.html">Выйти</a></li>
@@ -25,7 +31,7 @@
                     <li><a class="header-contacts-link" href="contacts.html">Контакты</a></li>
                 </ul>
                 <section class="catalog-menu">
-                    <!--Здесь точно не знаю как нужно. Если с помощью CSS можно сдeлать 3 столбца, то возможно и нет неообходимости в 3х отдельных <ul>-->
+<!--Здесь точно не знаю как нужно. Если с помощью CSS можно сдeлать 3 столбца, то возможно и нет неообходимости в 3х отдельных <ul>-->
                     <ul class="1st-column">
                         <li><a href="virtual-reality.html">Виртуальная реальность</a></li>
                         <li class="catalog-current">Моноподы для селфи</li>
@@ -52,8 +58,64 @@
             </ul>
             <section class="filters">
                 <h2 class="visually-hidden">Фильтр товаров</h2>
-                <!-- Здесь будет фильтр -->
+                <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+                    <fieldset>
+                        <legend>Цвет</legend>
+                        <ul>
+                            <li class="filter-option">
+                                <label>
+                                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Черный" checked>
+                                    Черный
+                            </li>
+                            <li class="filter-option">
+                                <label>
+                                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Белый">
+                                    Белый
+                                </label>
+                            </li>
+                            <li class="filter-option">
+                                <label>
+                                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Синий" checked>
+                                    Синий
+                                </label>
+                            </li>
+                            <li class="filter-option">
+                                <label>
+                                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Красный" checked>
+                                    Красный
+                                </label>
+                            </li>
+                            <li class="filter-option">
+                                <label>
+                                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Розовый">
+                                    Розовый
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset>   
+                        <legend>Bluetooth</legend>
+                        <ul>
+                            <li class="filter-option">
+                                <label>
+                                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth" value="Есть" checked>
+                                    Есть
+                                </label>
+                            </li>
+                            <li class="filter-option">
+                                <label>
+                                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth" value="Нет">
+                                    Нет
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <button type="submit" class="filter-button button">
+                    Показать
+                    </button>
+                </form>
             </section>
+
             <section class="catalog">
                 <h2 class="visually-hidden">Список моноподов для селфи</h2>
                 <ul class="catalog-list">
@@ -134,7 +196,7 @@
         <footer class="main-footer">
             <nav>
                 <a class="main-footer-logo" href="#">
-                    <img src="img/logo-device.svg" width="163" height="35" alt="logo DEVICE footer">
+                    <img src="img/logo-device.svg" width="163" height="35" alt="Логотип интернет-магазина DEVICE">
                 </a>
                 <ul class="footer-user-navigation">
                     <li><a class="profile" href="profile.html">Валентин Петухов</a></li>
