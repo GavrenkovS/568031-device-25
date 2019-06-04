@@ -12,11 +12,13 @@
                 <img src="img/logo-device.svg" width="163" height="35" alt="Логотип интернет-магазина DEVICE">
                 </a>
                 <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-                    <label class="visually-hidden">
+                    <label class="visually-hidden" for="search">
                         Поиск по сайту
-                        <input class="search" type="text" name="query" placeholder="Поиск по сайту">
                     </label>
-                    <button class="search-button" type="submit">Найти</button>
+                    <input class="site-search" id="search" type="search" name="query" placeholder="Поиск по сайту">
+                    <button class="search-button" type="submit">
+                        Найти
+                    </button>
                 </form>
                 <ul class="header-user-navigation">
                     <li><a class="profile" href="profile.html">Валентин Петухов</a></li>

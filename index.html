@@ -12,12 +12,14 @@
                 <img src="img/logo-device.svg" width="163" height="35" alt="Логотип интернет-магазина DEVICE">
                 </a>
                 <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-		            <label class="visually-hidden">
-		            	Поиск по сайту
-		            	<input class="search" type="text" name="query" placeholder="Поиск по сайту">
-		            </label>
-		            <button class="search-button" type="submit">Найти</button>
-		        </form>
+                    <label class="visually-hidden" for="search">
+                        Поиск по сайту
+                    </label>
+                    <input class="site-search" id="search" type="search" name="query" placeholder="Поиск по сайту">
+                    <button class="search-button" type="submit">
+                        Найти
+                    </button>
+                </form>
                 <ul class="header-user-navigation">
                     <li><a class="log-in-link" href="log-in.html">Войти</a></li>
                     <li><a class="compare-link" href="compare.html">Сравнить</a></li>
@@ -47,7 +49,7 @@
             </nav>
         </header>
 
-    	<!--Здесь будут блоки, выделенные красным-->
+    <!--Здесь будут блоки, выделенные красным-->
     
         <main class="container">
             <h1 class="visually-hidden">Интернет-магазин «DEVICE»</h1>
@@ -72,38 +74,41 @@
             </section>
 
             <section class="modal modal-write-to-us">
-            	<h2 class="visually-hidden">
-          			Обратная связь
-        		</h2>
-				<form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
-                	<label>
-                		Ваше имя:
-          				<input type="text" name="Имя Фамилия" value="" placeholder="Имя Фамилия">
-          			</label>
-          			<label>
-          				Ваш e-mail:
-          				<input type="text" name="E-mail" value="" placeholder="email@example.com">
-          			</label>
-          			<label>
-          				Текст письма:
-          				<input type="text" name="Текст письма" value="" placeholder="В свободной форме">
-				    </label>
-				    <button class="button" type="submit">Отправить</button>
-				</form>
-				<button class="modal-close" type="button">
-					Закрыть
-				</button>
+                <h2 class="visually-hidden">
+                    Обратная связь
+                </h2>
+                <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+                    <label>
+                        Ваше имя:
+                        <input type="text" name="name-surname" value="" placeholder="Имя Фамилия">
+                    </label>
+                    <label>
+                        Ваш e-mail:
+                        <input type="email" name="e-mail" value="" placeholder="email@example.com">
+                    </label>
+                    <label>
+                        Текст письма:
+                        <textarea name="letter-text" value="" placeholder="В свободной форме">
+                        </textarea>
+                    </label>
+                    <button class="button" type="submit">
+                        Отправить
+                    </button>
+                </form>
+                <button class="modal-close" type="button">
+                    Закрыть
+                </button>
             </section>
 
-             <section class="modal modal-map">
-        		<h2 class="visually-hidden">
-          			Как до нас добраться
-        		</h2>
-        		<img src="img/map-big.jpg" width="960" height="559" alt="Адрес: улица Строителей, 15. Москва">
-        		<button class="modal-close" type="button">
-          			Закрыть
-        		</button>
-    		</section>
+            <section class="modal modal-map">
+                <h2 class="visually-hidden">
+                    Как до нас добраться
+                </h2>
+                <img src="img/map-big.jpg" width="960" height="559" alt="Адрес: улица Строителей, 15. Москва">
+                <button class="modal-close" type="button">
+                    Закрыть
+                </button>
+            </section>
         </main>
 
 
@@ -136,8 +141,8 @@
             </div>
             <a class="footer-copyright-button" href="https://htmlacademy.ru/intensive/htmlcss">
             <img src="img/htmlacademy.svg" width="50" height="50" alt="htmlacademy.ru">
-            </a>        
-        </footer>  
+            </a>  
+        </footer>
     </body>
 </html>
  
