@@ -1,7 +1,40 @@
 
+/* подключение шрифтов*/
+    @font-face {
+    font-family: "Gilroy";
+    font-weight: bold;
+    src: url(../fonts/gilroyextrabold.woff) format("woff"),
+        url(../fonts/gilroyextrabold.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "Gilroy";
+    font-weight: 300;
+    src: url(../fonts/gilroylight.woff) format("woff"),
+        url(../fonts/gilroylight.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url(../fonts/opensans.woff) format("woff"),
+        url(../fonts/opensans.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-weight: 300;
+    src: url(../fonts/opensanslight.woff) format("woff"),
+        url(../fonts/opensanslight.woff2) format("woff2");
+}
+
+
+/*  СТИЛИЗАЦИЯ  */
+
+
 body {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+    width: 1160px;
     
     font-family: "Open Sans", Arial, sans-serif;
     font-size: 15px;
@@ -12,6 +45,8 @@ body {
     background-color: #ffffff;
 }
 
+
+
 a {
     text-decoration: none;
   }
@@ -19,11 +54,13 @@ a {
 .main-navigation {
     color: black;
     background-color: #f7e296;
+    margin-top: 40px;
  }
 
 
 .header-site-navigation,
-.button {
+.button,
+.pagination-button {
     font-family: "Gilroy", Arial, sans-serif;
     font-size: 18px;
     line-height: 24px;
@@ -45,9 +82,6 @@ a {
     color: #000000;
 }
 
-/*  :hover - наведение
-    :focus - фокус
-    :active - после щелчка по ссылке*/
 
 .search-form {
     opacity: 0.3;
@@ -123,9 +157,6 @@ border: 4px solid #f7e296;
 .main-footer {
     color: #ffffff;
     background-color: #464646;
-    /*background-image: url("img/background-image.png");*/
-    background-position: 0 0;
-    background-repeat: repeat;
 }
 
 .footer-site-navigation {
@@ -137,8 +168,8 @@ border: 4px solid #f7e296;
     color: #ffffff;
 }
 
-.footer-user-navigation {
-    opacity: 0.7;
+.footer-user-navigation a{
+   opacity: 0.7;
 }
 
 .footer-site-navigation,
@@ -164,7 +195,6 @@ border: 4px solid #f7e296;
 .footer-site-navigation a:active {
     opacity: 0.3;
 }
-
 
 /* cтили для каталога */
 
@@ -236,6 +266,148 @@ list-style: none;
 }
 
 
+/*  СЕТКИ  */
+.main-navigation {
+    padding: 0 60px;
+}
+
+.main-header-logo{
+position: relative;
+top: -19px;
+}
+
+.search-and-navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-form{
+    width: 540px; 
+    margin-left: auto;
+}
+.header-user-navigation {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.log-in-link {
+   margin-right: 220px; 
+}
+.compare-link {
+   margin-right: 40px; 
+}
+
+
+
+.header-site-navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.header-catalog-link {
+    width: 540px;  
+}
+
+.header-delivery-link {
+    width: 160px; 
+}
+
+.header-guaranty-link {
+    width: : 220px; 
+}
+
+
+
+
+
+
+
+.catalog-menu {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.first-column {
+    padding: 0;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+}
+.about-us {
+    width: 475px;
+}
+.contacts {
+    width: 560px;
+}
+
+/*  FOOTER  */
+
+.main-footer {
+    padding: 0 60px;
+    height: 323px;
+
+}
+
+.footer-user-navigation {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-site-navigation {
+    display: flex;
+    width: 425px;
+    margin: 0 auto;
+    justify-content: space-between;
+
+}
+
+.footer-contacts {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: -40px;
+}
+
+.footer-social-copyright {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-social-copyright ul{
+    display: flex;
+    justify-content: center;
+}
+
+/*   ДЛЯ КАТАЛОГА   */
+
+.breadcrumbs {
+    display: flex;
+}
+
+.filters-and-catalog {
+    display: flex;
+}
+
+.filters {
+    width: 200px;
+}
+
+.catalog {
+    display: flex;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pagination-list {
+    display: flex;
+}
 
 .visually-hidden {
     border: 0;
@@ -250,32 +422,6 @@ list-style: none;
     display: inline-block; // new - for reading order in macOS VO
 }
 
-@font-face {
-    font-family: "Gilroy";
-    font-weight: bold;
-    src: url(../fonts/gilroyextrabold.woff) format("woff"),
-        url(../fonts/gilroyextrabold.woff2) format("woff2");
-}
-
-@font-face {
-    font-family: "Gilroy";
-    font-weight: 300;
-    src: url(../fonts/gilroylight.woff) format("woff"),
-        url(../fonts/gilroylight.woff2) format("woff2");
-}
-
-@font-face {
-    font-family: "Open Sans";
-    src: url(../fonts/opensans.woff) format("woff"),
-        url(../fonts/opensans.woff2) format("woff2");
-}
-
-@font-face {
-    font-family: "Open Sans";
-    font-weight: 300;
-    src: url(../fonts/opensanslight.woff) format("woff"),
-        url(../fonts/opensanslight.woff2) format("woff2");
-}
 
 
 
