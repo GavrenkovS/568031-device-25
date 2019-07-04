@@ -8,7 +8,7 @@
       <base href="https://htmlacademy-htmlcss.github.io/568031-device-25/6/">
 </head>
     <body>
-        <header class="main-header">
+        <header class="main-header center-property">
             <nav class="main-navigation">
                 <a class="main-header-logo" href="index.html">
                 <img src="img/logo-device.svg" width="163" height="35" alt="Логотип интернет-магазина DEVICE">
@@ -25,21 +25,24 @@
                     </form>
                     <ul class="header-user-navigation">
                         <li><a class="log-in-link" href="log-in.html">Войти</a></li>
-                        <li><a class="compare-link" href="compare.html">Сравнить</a></li>
-                        <li><a class="cart-link" href="cart.html">Корзина</a></li>
+                        <div class="footer-compare-and-cart-wrap">                                
+                            <li><a class="compare-link" href="compare.html">Сравнить</a></li>
+                            <li><a class="cart-link" href="cart.html">Корзина</a></li>
+                        </div>
                     </ul>
                 </div>
                 <ul class="header-site-navigation">
                     <li><a class="header-catalog-link" href="catalog.html">Каталог товаров</a></li>
-                    <li><a class="header-delivery-link" href="delivery.html">Доставка</a></li>
-                    <li><a class="header-guaranty-link" href="guaranty.html">Гарантия</a></li>
-                    <li><a class="header-contacts-link" href="contacts.html">Контакты</a></li>
+                    <div class="header-site-navigation-wrap">
+                        <li><a class="header-delivery-link" href="delivery.html">Доставка</a></li>
+                        <li><a class="header-guaranty-link" href="guaranty.html">Гарантия</a></li>
+                        <li><a class="header-contacts-link" href="contacts.html">Контакты</a></li>
+                    </div>
                 </ul>
                 <section class="catalog-menu">
                     <h2 class="visually-hidden">
                         Выпадающее меню
                     </h2>
-<!--Здесь точно не знаю как нужно. Если с помощью CSS можно сдeлать 3 столбца, то возможно и нет неообходимости в 3х отдельных <ul>-->
                     <ul class="first-column">
                         <li><a href="virtual-reality.html">Виртуальная реальность</a></li>
                         <li><a href="selfie-sticks.html">Моноподы для селфи</a></li>
@@ -58,7 +61,7 @@
 
     <!--Здесь будут блоки, выделенные красным-->
     
-        <main class="container">
+        <main class="container center-property">
                 <h1 class="visually-hidden">Интернет-магазин «DEVICE»</h1>
                 <section class="slider">
                     
@@ -123,40 +126,45 @@
 
 
         <footer class="main-footer">
-            <nav>
-                <a class="main-footer-logo" href="#">
-                <img src="img/logo-device.svg" width="163" height="35" alt="Логотип интернет-магазина DEVICE">
-                </a>
-                <ul class="footer-user-navigation">
-                    <li><a class="log-in-link" href="log-in.html">Войти</a></li>
-                    <li><a class="compare-link" href="compare.html">Сравнить</a></li>
-                    <li><a class="cart-link" href="cart.html">Корзина</a></li>
-                </ul>
-                <ul class="footer-site-navigation">
-                    <li><a href="delivery.html">Доставка</a></li>
-                    <li><a href="guaranty.html">Гарантия</a></li>
-                    <li><a href="contacts.html">Контакты</a></li>
-                </ul>
-            </nav>
-            <div class="footer-contacts">
-                <p class="footer-address">г. Москва, ул. Строителей, 15</p>
-                <p class="footer-phone-number">Тел.:+7(495)495-95-95</p>
-            </div>
-            <div class="footer-social-copyright">  
-                <div class="">
-                    Черта
-                </div>         
-                <div class="footer-social">
-                    <ul>
-                        <li><a class="social-button" href="#">Facebook</a></li>
-                        <li><a class="social-button" href="#">Instagram</a></li>
-                        <li><a class="social-button" href="#">Twitter</a></li>
+            <div class="center-property">
+                <div class="logo-and-user-navigation-wrap">
+                    <a class="main-footer-logo" href="#">
+                        <img src="img/logo-device.svg" width="163" height="35" alt="Логотип интернет-магазина DEVICE">
+                    </a>
+                    <ul class="footer-user-navigation">
+                        <li><a class="footer-log-in-link" href="log-in.html">Войти</a></li>
+                        <li><a class="footer-compare-link" href="compare.html">Сравнить</a></li>
+                        <li><a class="footer-cart-link" href="cart.html">Корзина</a></li>
                     </ul>
                 </div>
-                <a class="footer-copyright-button" href="https://htmlacademy.ru/intensive/htmlcss">
-                <img src="img/htmlacademy.svg" width="50" height="50" alt="htmlacademy.ru">
-                </a>
-            </div> 
+                <div class="contacts-and-site-navigation-wrap">
+                    <nav>
+                        <ul class="footer-site-navigation">
+                            <li><a class="footer-delivery-link" href="delivery.html">Доставка</a></li>
+                            <li><a class="footer-guaranty-link" href="guaranty.html">Гарантия</a></li>
+                            <li><a class="footer-contacts-link" href="contacts.html">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <p class="footer-address">г. Москва, ул. Строителей, 15</p>
+                    <p class="footer-phone-number">Тел.:+7(495)495-95-95</p>
+                    
+                </div>
+                <div class="footer-social-copyright">  
+                    <div class="">
+                        декоративный эл-т
+                    </div>         
+                    <div class="footer-social">
+                        <ul>
+                            <li><a class="social-button" href="#">Facebook</a></li>
+                            <li><a class="social-button" href="#">Instagram</a></li>
+                            <li><a class="social-button" href="#">Twitter</a></li>
+                        </ul>
+                    </div>
+                    <a class="footer-copyright-button" href="https://htmlacademy.ru/intensive/htmlcss">
+                    <img src="img/htmlacademy.svg" width="50" height="50" alt="htmlacademy.ru">
+                    </a>
+                </div>
+            </div>
         </footer>
     </body>
 </html>
