@@ -33,6 +33,7 @@ body {
     font-weight: 300;
     color: #464646;    
     background-color: #ffffff;
+    margin: 0;
 }
 
 a {
@@ -239,6 +240,7 @@ border: 4px solid #f7e296;
     padding: 67px 60px;
     height: 323px;
     box-sizing: border-box;
+    margin: 0;
 }
 
 .footer-user-navigation a {
@@ -346,7 +348,8 @@ border: 4px solid #f7e296;
 }
 
 .breadcrumbs,
-.catalog-list {
+.catalog-list,
+.sorting ul {
     list-style: none;
 }
 
@@ -356,6 +359,26 @@ border: 4px solid #f7e296;
     line-height: 48px;
     font-weight: bold;
     color: #000000; 
+}
+
+.filter-title h3,
+.sorting h3 {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000000;
+    letter-spacing: 3px;
+}
+
+.sorting li {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 300;
+    color: #464646;
+    opacity: 0.3;
 }
 
 .catalog a {
@@ -392,11 +415,13 @@ border: 4px solid #f7e296;
     text-transform: uppercase;
 }
 
-.breadcrumbs a:hover {
+.breadcrumbs a:hover,
+.sorting li:hover {
     opacity: 0.6;
 }
 
-.breadcrumbs a:active {
+.breadcrumbs a:active,
+.sorting li:active {
     opacity: 0.1;
 }
 
@@ -406,23 +431,68 @@ border: 4px solid #f7e296;
     display: flex;
 }
 
+.container-header {
+    width: 1160px;
+    margin: 0 auto;
+    padding-left: 60px;
+    box-sizing: border-box;
+}
+
+.container-header ul {
+    padding: 0;
+}
+
 .breadcrumbs {
     display: flex;
     align-items: flex-end;
 }
 
-.filters-and-catalog {
+.sorting-wrap {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background: linear-gradient(to right, #dcdcdc 40%, #ebebeb 40%);
 }
 
-.filters {
-    width: 328px;;
+.filter-title h3{
+    width: 328px;
+    padding: 12px 60px;
+    box-sizing: border-box;
+}
+
+.sorting {
+    display: flex;
+    width: 832px;
+    background-color: #ebebeb;
+    align-items: center;
+    padding: 12px 73px;
+    box-sizing: border-box;
+}
+
+.sorting ul {
+    display: flex;
+}
+
+.sorting li {
+    margin-right: 33px;
+}
+
+.filters-and-catalog {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background: linear-gradient(to right, #efefef 40%, #ffffff 40%);
+}
+
+.filter {
+    width: 328px;
 }
 
 .catalog {
     width: 832px;
     box-sizing: border-box;
+    background-color: #ffffff;
 }
 
 .catalog ul {
@@ -446,8 +516,8 @@ border: 4px solid #f7e296;
     order: -1;
 }
 
-.catalog-item-link {
-    width: 220px;
+.catalog-item-name {
+    width: 230px;
 }
 
 .pagination {
@@ -465,6 +535,10 @@ border: 4px solid #f7e296;
 .pagination .pagination-list {
     display: flex;
     justify-content: center;
+}
+
+.pagination-item {
+    margin-right: 33px;
 }
 
 .footer-compare-and-cart-wrap {
