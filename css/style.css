@@ -1,56 +1,83 @@
+@font-face {
+    font-family: "Gilroy";
+    font-weight: bold;
+    src: url(../fonts/gilroyextrabold.woff) format("woff"),
+    url(../fonts/gilroyextrabold.woff2) format("woff2");
+}
 
-body {
-    margin: 0;
-    padding: 0;
-    
+@font-face {
+    font-family: "Gilroy";
+    font-weight: 300;
+    src: url(../fonts/gilroylight.woff) format("woff"),
+    url(../fonts/gilroylight.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url(../fonts/opensans.woff) format("woff"),
+    url(../fonts/opensans.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-weight: 300;
+    src: url(../fonts/opensanslight.woff) format("woff"),
+    url(../fonts/opensanslight.woff2) format("woff2");
+}
+
+
+body {    
     font-family: "Open Sans", Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
     font-weight: 300;
-    color: #464646;
-    
+    color: #464646;    
     background-color: #ffffff;
+    margin: 0;
 }
 
 a {
     text-decoration: none;
-  }
+}
+
+ .center-property {
+    margin: 0 auto;
+    padding: 0;
+    width: 1160px;
+}
+
+/*    HEADER   */
 
 .main-navigation {
     color: black;
     background-color: #f7e296;
+    margin-top: 40px;
+    padding: 0 60px;
  }
 
-
 .header-site-navigation,
-.button {
+.button,
+.pagination-button {
     font-family: "Gilroy", Arial, sans-serif;
     font-size: 18px;
     line-height: 24px;
     font-weight: bold;
     text-transform: uppercase;
     color: #000000;
+    letter-spacing: 3px;
 }
 
 .header-site-navigation,
 .header-user-navigation,
 .catalog-menu li {
     list-style: none;
-       color: #000000;
+    color: #000000;
 }
 
 .header-site-navigation a,
 .header-user-navigation a,
 .catalog-menu a {
     color: #000000;
-}
-
-/*  :hover - наведение
-    :focus - фокус
-    :active - после щелчка по ссылке*/
-
-.search-form {
-    opacity: 0.3;
 }
 
 .header-user-navigation a:hover,   
@@ -65,11 +92,75 @@ a {
     opacity: 0.3;
 }
 
+.header-user-navigation .log-out-link,
+.logo-and-user-navigation-wrap .footer-log-out-link,
+.header-user-navigation .log-out-link:hover,
+.logo-and-user-navigation-wrap .footer-log-out-link:hover,
+.header-user-navigation .log-out-link:active,
+.logo-and-user-navigation-wrap .footer-log-out-link:active {
+    opacity: 0.3;
+}
+
 .search-form:hover {
     opacity: 0.6;
 }
+
 .search-form:focus {
     opacity: 1.0;
+}
+
+.search-button {
+    margin-right: 100px;
+}
+
+.search-and-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-form {
+    display: flex;
+    justify-content: space-between;
+    width: 540px; 
+    opacity: 0.3;
+}
+
+.header-user-navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    padding: 0;
+}
+
+.log-in-link {
+   display: flex;
+   justify-content: flex-start; 
+}
+
+.header-site-navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.header-site-navigation-wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+
+.header-guaranty-link {
+    margin-right: 70px;
+}
+
+.catalog-menu {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.first-column {
+    padding: 0;
 }
 
 .subtitle {
@@ -88,6 +179,32 @@ a {
     color: #000000;
 }
 
+.features {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 38px;
+}
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 475px;
+    height: 560px;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 560px;
+    height: 560px;
+}
+
+.contacts img,
+.transport-companies-list {
+    margin-bottom: 80px;
+}
 .modal-write-to-us {
     font-family: "Gilroy", Arial, sans-serif;
     font-size: 18px;
@@ -110,7 +227,6 @@ a {
 .appointment-form input:hover,
 .appointment-form textarea:hover {
 
-
 }
 
 .appointment-form input:focus,
@@ -118,27 +234,17 @@ a {
 border: 4px solid #f7e296;
 }
 
-
-
 .main-footer {
     color: #ffffff;
     background-color: #464646;
-    /*background-image: url("img/background-image.png");*/
-    background-position: 0 0;
-    background-repeat: repeat;
+    padding: 67px 60px;
+    height: 323px;
+    box-sizing: border-box;
+    margin: 0;
 }
 
-.footer-site-navigation {
-    font-family: "Gilroy", Arial, sans-serif;
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #ffffff;
-}
-
-.footer-user-navigation {
-    opacity: 0.7;
+.footer-user-navigation a {
+   opacity: 0.7;
 }
 
 .footer-site-navigation,
@@ -165,11 +271,74 @@ border: 4px solid #f7e296;
     opacity: 0.3;
 }
 
+.footer-user-navigation {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-compare-link,
+.footer-log-in-link,
+.footer-log-out-link {
+    margin-right: 40px;
+}
+
+.footer-profile,
+.profile {
+    margin-right: 20px;
+}
+
+.footer-site-navigation {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    letter-spacing: 4px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-and-user-navigation-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.contacts-and-site-navigation-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 45px;
+}
+
+.footer-address {
+    order: -1;
+}
+
+.footer-delivery-link,
+.footer-guaranty-link {
+    margin-right: 38px;
+}
+
+.footer-social-copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-social ul {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-social li {
+    margin-right: 25px;
+}
 
 /* cтили для каталога */
 
-.breadcrumbs a,
-.breadcrumbs-current {
+.breadcrumbs a {
     font-family: "Open Sans", Arial, sans-serif;
     font-size: 14px;
     line-height: 24px;
@@ -179,8 +348,9 @@ border: 4px solid #f7e296;
 }
 
 .breadcrumbs,
-.catalog-list {
-list-style: none;
+.catalog-list,
+.sorting ul {
+    list-style: none;
 }
 
 .page-title {
@@ -189,6 +359,26 @@ list-style: none;
     line-height: 48px;
     font-weight: bold;
     color: #000000; 
+}
+
+.filter-title h3,
+.sorting h3 {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000000;
+    letter-spacing: 3px;
+}
+
+.sorting li {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 300;
+    color: #464646;
+    opacity: 0.3;
 }
 
 .catalog a {
@@ -216,7 +406,7 @@ list-style: none;
     list-style: none;
 }
 
-.pagination button {
+.pagination a {
     font-family: "Gilroy", Arial, sans-serif;
     font-size: 16px;
     line-height: 24px;
@@ -226,13 +416,138 @@ list-style: none;
 }
 
 .breadcrumbs a:hover,
-.breadcrumbs-current:hover {
+.sorting li:hover {
     opacity: 0.6;
 }
 
 .breadcrumbs a:active,
-.breadcrumbs-current:active {
+.sorting li:active {
     opacity: 0.1;
+}
+
+/*   СЕТКИ ДЛЯ КАТАЛОГА   */
+
+.profile-wrap {
+    display: flex;
+}
+
+.container-header {
+    width: 1160px;
+    margin: 0 auto;
+    padding-left: 60px;
+    box-sizing: border-box;
+}
+
+.container-header ul {
+    padding: 0;
+}
+
+.breadcrumbs {
+    display: flex;
+    align-items: flex-end;
+}
+
+.sorting-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background: linear-gradient(to right, #dcdcdc 40%, #ebebeb 40%);
+}
+
+.filter-title h3{
+    width: 328px;
+    padding: 12px 60px;
+    box-sizing: border-box;
+}
+
+.sorting {
+    display: flex;
+    width: 832px;
+    background-color: #ebebeb;
+    align-items: center;
+    padding: 12px 73px;
+    box-sizing: border-box;
+}
+
+.sorting ul {
+    display: flex;
+}
+
+.sorting li {
+    margin-right: 33px;
+}
+
+.filters-and-catalog {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background: linear-gradient(to right, #efefef 40%, #ffffff 40%);
+}
+
+.filter {
+    width: 328px;
+}
+
+.catalog {
+    width: 832px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+.catalog ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 832px;
+    padding-left: 73px;
+    box-sizing: border-box;
+}
+
+.catalog-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 360px;
+}
+
+.catalog-item-image {
+    order: -1;
+}
+
+.catalog-item-name {
+    width: 230px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 760px;
+    background-color: #ebebeb;
+    padding: 10px 30px;
+    margin-left: auto;
+    margin-bottom: 76px;
+    box-sizing: border-box;
+}
+
+.pagination .pagination-list {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination-item {
+    margin-right: 33px;
+}
+
+.footer-compare-and-cart-wrap {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.compare-link {
+   margin-right: 40px; 
 }
 
 
@@ -246,36 +561,10 @@ list-style: none;
     margin: -1px;
     overflow: hidden;
     padding: 0;
-    position: relative; // different - for reading order in macOS VO
+    position: absolute; // different - for reading order in macOS VO
     display: inline-block; // new - for reading order in macOS VO
 }
 
-@font-face {
-    font-family: "Gilroy";
-    font-weight: bold;
-    src: url(../fonts/gilroyextrabold.woff) format("woff"),
-        url(../fonts/gilroyextrabold.woff2) format("woff2");
-}
-
-@font-face {
-    font-family: "Gilroy";
-    font-weight: 300;
-    src: url(../fonts/gilroylight.woff) format("woff"),
-        url(../fonts/gilroylight.woff2) format("woff2");
-}
-
-@font-face {
-    font-family: "Open Sans";
-    src: url(../fonts/opensans.woff) format("woff"),
-        url(../fonts/opensans.woff2) format("woff2");
-}
-
-@font-face {
-    font-family: "Open Sans";
-    font-weight: 300;
-    src: url(../fonts/opensanslight.woff) format("woff"),
-        url(../fonts/opensanslight.woff2) format("woff2");
-}
 
 
 
